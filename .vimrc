@@ -5,6 +5,7 @@ syntax enable
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'godlygeek/tabular'
@@ -21,6 +22,7 @@ filetype plugin indent on       " load file type plugins + indentation
 set nobackup
 set noswapfile
 
+set background=dark
 colorscheme solarized
 
 "" Whitespace
