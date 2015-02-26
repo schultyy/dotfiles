@@ -12,6 +12,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'tpope/vim-commentary'
 Plugin 'rodjek/vim-puppet'
+Plugin 'airblade/vim-gitgutter'
 call vundle#end()            " required
 map <C-n> :NERDTreeToggle<CR>
 filetype plugin indent on    " required
