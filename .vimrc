@@ -13,6 +13,8 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'tpope/vim-commentary'
 Plugin 'rodjek/vim-puppet'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'JulesWang/css.vim' " only necessary if your Vim version < 7.4
+Plugin 'cakebaker/scss-syntax.vim'
 call vundle#end()            " required
 map <C-n> :NERDTreeToggle<CR>
 filetype plugin indent on    " required
