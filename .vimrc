@@ -14,6 +14,8 @@ Plugin 'tpope/vim-commentary'
 Plugin 'rodjek/vim-puppet'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'elzr/vim-json'
+Plugin 'JulesWang/css.vim' " only necessary if your Vim version < 7.4
+Plugin 'cakebaker/scss-syntax.vim'
 call vundle#end()            " required
 map <C-n> :NERDTreeToggle<CR>
 filetype plugin indent on    " required
@@ -40,6 +42,15 @@ set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 set mouse=a " Enable using the mouse if terminal emulator
 set mousehide
+
+" Strip trailing whitespaces on each save
+fun! <SID>StripTrailingWhitespaces()
+  let l = line(".")
+  let c = col(".")
+  %s/\s\+$//e
+  call cursor(l, c)
+endfun
+autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
 ""Line numbers
 set number
