@@ -1,10 +1,10 @@
 set nocompatible                " choose no compatibility with legacy vi
-syntax enable
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
+Plugin 'elixir-lang/vim-elixir'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
@@ -20,6 +20,7 @@ Plugin 'tpope/vim-haml'
 call vundle#end()            " required
 map <C-n> :NERDTreeToggle<CR>
 filetype plugin indent on    " required
+syntax enable
 
 set encoding=utf-8
 set showcmd                     " display incomplete commands
