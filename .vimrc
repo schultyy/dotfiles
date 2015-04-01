@@ -27,6 +27,8 @@ set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
 set nobackup
 set noswapfile
+let g:vim_markdown_folding_disabled=1
+set clipboard=unnamed
 
 set background=dark
 colorscheme solarized
