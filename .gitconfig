@@ -1,0 +1,10 @@
+[push]
+  default = simple
+[core]
+  editor = vim
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+
