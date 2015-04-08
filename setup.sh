@@ -23,3 +23,8 @@ if [ -d ~/.vim/ftplugin ] ; then
 fi
 ln -s ~/dotfiles/ftplugin ~/.vim/ftplugin
 
+if [ -f ~/.gitconfig ] ; then
+  echo "Found existing ~/.gitconfig. Moving to ~/.gitconfig.old"
+  mv ~/.gitconfig ~/.gitconfig.old
+fi
+ln -s ~/dotfiles/.gitconfig ~/.gitconfig
