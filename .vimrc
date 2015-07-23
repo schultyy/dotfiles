@@ -71,3 +71,6 @@ au BufRead,BufNewFile Vagrantfile setf ruby
 
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+" ControlP should ignore certain directories by default
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
