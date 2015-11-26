@@ -14,6 +14,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'rodjek/vim-puppet'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'elzr/vim-json'
+Plugin 'isRuslan/vim-es6'
 Plugin 'JulesWang/css.vim' " only necessary if your Vim version < 7.4
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'tpope/vim-haml'
