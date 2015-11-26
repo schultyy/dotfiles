@@ -6,6 +6,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'chriskempson/base16-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'godlygeek/tabular'
@@ -35,7 +36,7 @@ let g:vim_markdown_folding_disabled=1
 set clipboard=unnamed
 
 set background=dark
-colorscheme solarized
+colorscheme base16-solarized
 
 "" Whitespace
 set nowrap                      " don't wrap lines
