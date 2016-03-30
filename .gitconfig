@@ -1,3 +1,5 @@
+[user]
+	useconfigonly = true
 [push]
   default = simple
 [core]
