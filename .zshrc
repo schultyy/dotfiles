@@ -41,20 +41,15 @@ ZSH_THEME="avit"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
 plugins=(git ruby vagrant xcode bundler brew rvm)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
-#export PATH="/Users/janschulte/.rvm/gems/ruby-2.1.1/bin:/Users/janschulte/.rvm/gems/ruby-2.1.1@global/bin:/Users/janschulte/.rvm/rubies/ruby-2.1.1/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/janschulte/.rvm/bin"
-export PATH=/usr/local/bin:/usr/local/sbin:~/bin:~/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-# export MANPATH="/usr/local/man:$MANPATH"
+export PATH=/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=~/.avm/node/bin:~/.avm/ruby/bin:$PATH
+export PATH=/Users/janschulte/.multirust/toolchains/stable/cargo/bin:$PATH
+export PATH=/Users/janschulte/.multirust/toolchains/beta/cargo/bin:$PATH
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
