@@ -64,3 +64,4 @@ fi
 bindkey "[C" forward-word
 bindkey "[D" backward-word
 
+export VAGRANT_DEFAULT_PROVIDER=virtualbox
