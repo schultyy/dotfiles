@@ -41,7 +41,7 @@ ZSH_THEME="mortalscumbag"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-plugins=(git ruby vagrant xcode bundler brew rvm)
+plugins=(git ruby vagrant xcode bundler brew rvm ssh-agent)
 
 source $ZSH/oh-my-zsh.sh
 
