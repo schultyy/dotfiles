@@ -23,6 +23,12 @@ if [ -d ~/.vim/ftplugin ] ; then
 fi
 ln -s ~/dotfiles/ftplugin ~/.vim/ftplugin
 
+if [ -d ~/.vim/colors ] ; then
+  echo "Found existing ~/.vim/colors. Moving to ~/.vim/colors_old"
+  mv ~/.vim/colors ~/.vim/colors_old
+fi
+ln -s ~/dotfiles/colors ~/.vim/colors
+
 if [ -f ~/.gitconfig ] ; then
   echo "Found existing ~/.gitconfig. Moving to ~/.gitconfig.old"
   mv ~/.gitconfig ~/.gitconfig.old

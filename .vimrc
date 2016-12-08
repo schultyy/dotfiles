@@ -38,7 +38,8 @@ let g:vim_markdown_folding_disabled=1
 set clipboard=unnamed
 
 set background=dark
-colorscheme solarized
+set t_Co=256
+colorscheme distinguished
 
 "" Whitespace
 set nowrap                      " don't wrap lines
