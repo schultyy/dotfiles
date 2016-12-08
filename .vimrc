@@ -66,7 +66,7 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
 ""Line numbers
 set number
-set guifont=Courier:18
+set guifont="Fira Code":18
 let macvim_skip_colorscheme = 1
 au BufRead,BufNewFile *.rabl setf ruby
 au BufRead,BufNewFile *.json setf javascript
