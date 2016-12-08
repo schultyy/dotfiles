@@ -5,6 +5,7 @@
   excludesfile = ~/.gitignore
 [core]
   editor = vim
+	excludesfile = ~/.gitignore
 [alias]
   co = checkout
   ci = commit
