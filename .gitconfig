@@ -2,7 +2,6 @@
   useconfigonly = true
 [push]
   default = simple
-  excludesfile = ~/.gitignore
 [core]
   editor = vim
 	excludesfile = ~/.gitignore
