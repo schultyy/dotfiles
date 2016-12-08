@@ -22,6 +22,8 @@ Plugin 'tpope/vim-haml'
 Plugin 'tpope/vim-cucumber'
 Plugin 'rust-lang/rust.vim'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'Chiel92/vim-autoformat'
+Plugin 'leafgarland/typescript-vim'
 call vundle#end()            " required
 map <C-n> :NERDTreeToggle<CR>
 filetype plugin indent on    " required
