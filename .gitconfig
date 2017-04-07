@@ -1,5 +1,6 @@
 [user]
   useconfigonly = true
+  name = Jan Schulte
 [push]
   default = simple
 [core]
