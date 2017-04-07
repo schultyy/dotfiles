@@ -48,8 +48,9 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 export PATH=/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH=~/.avm/node/bin:~/.avm/ruby/bin:$PATH
-export PATH=/Users/janschulte/.multirust/toolchains/stable/cargo/bin:$PATH
-export PATH=/Users/janschulte/.multirust/toolchains/beta/cargo/bin:$PATH
+export PATH=~/.cargo/bin:$PATH
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
