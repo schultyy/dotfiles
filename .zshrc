@@ -41,13 +41,12 @@ ZSH_THEME="terminalparty"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-plugins=(git ruby vagrant xcode bundler brew rvm ssh-agent)
+plugins=(git ruby bundler brew ssh-agent)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 export PATH=/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin
-export PATH=~/.avm/node/bin:~/.avm/ruby/bin:$PATH
 export PATH=~/.cargo/bin:$PATH
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
@@ -55,14 +54,7 @@ eval "$(rbenv init -)"
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='mvim'
-fi
+export EDITOR='vim'
 
 bindkey "[C" forward-word
 bindkey "[D" backward-word
-
-export VAGRANT_DEFAULT_PROVIDER=virtualbox
