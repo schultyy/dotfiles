@@ -1,6 +1,7 @@
 [user]
   useconfigonly = true
-  name = Jan Schulte
+	name = Jan Schulte
+	email = jan.schulte@hey.com
 [push]
   default = simple
 [core]
