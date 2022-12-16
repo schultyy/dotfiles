@@ -35,5 +35,11 @@ if [ -f ~/.gitconfig ] ; then
 fi
 ln -s ~/dotfiles/.gitconfig ~/.gitconfig
 
+# Add .env file for Secrets
+touch $HOME/.env
+
+# Install Syntax Highlighting for zsh
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
 # /// NeoVIM
 source vim.sh
