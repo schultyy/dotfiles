@@ -1,12 +1,13 @@
 [user]
   useconfigonly = true
 	name = Jan Schulte
-	email = jan.schulte@hey.com
+	email = janschulte@fastmail.com
 [push]
   default = simple
 [core]
   editor = vim
 	excludesfile = ~/.gitignore
+	autocrlf = input
 [alias]
   co = checkout
   ci = commit
@@ -14,3 +15,7 @@
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 [color]
   ui = true
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
