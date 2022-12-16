@@ -34,3 +34,6 @@ if [ -f ~/.gitconfig ] ; then
   mv ~/.gitconfig ~/.gitconfig.old
 fi
 ln -s ~/dotfiles/.gitconfig ~/.gitconfig
+
+# /// NeoVIM
+source vim.sh
