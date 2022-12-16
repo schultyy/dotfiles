@@ -1,11 +1,12 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="terminalparty"
+ZSH_THEME="lambda"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -41,13 +42,17 @@ ZSH_THEME="terminalparty"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-plugins=(git ruby bundler brew ssh-agent)
+plugins=(git brew ssh-agent rbenv zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
+fpath+=$HOME/.zsh/pure
+autoload -Uz promptinit
+promptinit
+zstyle :prompt:pure:path color magenta
+prompt pure
 
 # User configuration
-export PATH=/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin
-export PATH=~/.cargo/bin:$PATH
+# export PATH=$PATH:/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
@@ -58,3 +63,11 @@ export EDITOR='vim'
 
 bindkey "[C" forward-word
 bindkey "[D" backward-word
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
+alias k='kubectl'
+alias be='bundle exec'
+
