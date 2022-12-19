@@ -1,8 +1,11 @@
 require('plugins')
+require('remap')
 require('colorschemes')
 require("rust")
 require("opts")
 require("completions")
+require("treesitter-conf")
+require("orgmode-setup")
 
 local opt = vim.opt
 
