@@ -6,6 +6,7 @@ require("opts")
 require("completions")
 require("treesitter-conf")
 require("orgmode-setup")
+require("ctrlp")
 
 local opt = vim.opt
 
